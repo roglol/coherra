@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    width: 1040px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+
+.wrapper > div{
+    width: 46.1538%;
+}
+
+.image {
+    position:relative;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
+.student{
+    position: absolute;
+    top: 29px;
+    left: 29px
+}
+
+.title{
+    font-size: 48px;
+    color: #685DC5;
+    font-weight: 500;
+    padding: 75px 0 40px;
+}
+
+.description {
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: -0.33px;
+}
