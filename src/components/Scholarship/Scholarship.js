@@ -2,7 +2,6 @@ import React from 'react';
 import ScholarshipStyle from "./Scholarship.module.css";
 
 const Scholarship = ({data}) => {
-    console.log(data,'data')
     return (
         <main className={ScholarshipStyle.wrapper}>
         <div className={[ScholarshipStyle['scolarship-wrapper']]}>

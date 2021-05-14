@@ -1,121 +1,184 @@
-.scolarship-wrapper{
-    border: 1px solid #DADADA;
-    border-radius: 4px;
-    padding: 32px 27.25px 30px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 170px;
-    height: 524px;
-    width: 320px;
+.scolarship-wrapper {
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 32px 27.25px 30px;
+  display: flex;
+  flex-direction: column;
+  height: 524px;
+  width: 320px;
 }
-.title{
-    color: #685DC5;
-    font-weight: 500;
-    font-size: 16px;
+.title {
+  color: #685dc5;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .meta-title {
-    margin: 8px 0 22px;
-    font-size: 26px;
-    color: #6A6A6A;
+  margin: 8px 0 22px;
+  font-size: 26px;
+  color: #6a6a6a;
 }
 
-.scolarship-value{
-    margin-top: 30px;
-    font-weight: 300;
-    font-size: 48px;
-    padding-bottom: 176px;
-    border-bottom: 1px solid #DADADA;
+.scolarship-value {
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 48px;
+  padding-bottom: 176px;
+  border-bottom: 1px solid #dadada;
 }
-
-
 
 .wrapper {
-    display: flex;
-    width: 1140px;
-    margin: 0 auto;
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 170px;
 }
 
-.scholarship-info{
-    margin-top:61px;
-    display: flex;
-    flex-wrap: wrap;
-
+.scholarship-info {
+  margin-top: 61px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.scholarship-info > div{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
+.scholarship-info > div {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
 }
-.scholarship-info > div:not(:last-child){
-    margin-bottom: 25px;
-
-}
-
-.commitment{
-    display: flex;
-
+.scholarship-info > div:not(:last-child) {
+  margin-bottom: 25px;
 }
 
-.commitment > div{
-    width: 320px;
-    height: 274px;
-    border: 1px solid #DADADA;
-    border-radius: 4px;
-    padding: 36px 25px 40px;
-    display: flex; 
-    flex-direction: column;
+.commitment {
+  display: flex;
 }
 
+.commitment > div {
+  width: 320px;
+  height: 274px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 36px 25px 40px;
+  display: flex;
+  flex-direction: column;
+}
 
-.commitment > div:not(:last-child){
-    margin: 0 40px;
+.commitment > div:not(:last-child) {
+  margin: 0 40px;
 }
 
 .divider {
-width: 28px;
-height: 1px;
-background-color: #DADADA;
-margin-bottom: 16px;
+  width: 28px;
+  height: 1px;
+  background-color: #dadada;
 }
 
 .description {
-    font-size: 16px;
-    color: #535353;
-    line-height: 24px;
+  font-size: 16px;
+  color: #535353;
+  line-height: 24px;
 }
 
-.graduation{
-    text-transform: uppercase;
-    margin: 36px 40px 35px;
-    height: 1px;
-    width: calc(100% - 40px);
-    background-color: #DADADA;
-    position: relative;
+.graduation {
+  text-transform: uppercase;
+  margin: 36px 40px 35px;
+  height: 1px;
+  width: calc(100% - 40px);
+  background-color: #dadada;
+  position: relative;
 }
 
 .graduation span {
-    position: absolute;
-    z-index: 100;
-    top: -9px;
-    padding: 0 40px;
-    left: calc(50% - 80px);
-    background-color: #fff;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: -0.15px;
+  position: absolute;
+  z-index: 100;
+  top: -9px;
+  padding: 0 40px;
+  left: calc(50% - 80px);
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.15px;
 }
 
+.full-time {
+  margin-left: 40px;
+  width: calc(100% - 40px);
+  height: 178px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 36px 25px 40px;
+  display: flex;
+  flex-direction: column;
+}
 
-.full-time{
-    margin-left: 40px;
-    width: calc(100% - 40px);
-    height: 178px;
-    border: 1px solid #DADADA;
-    border-radius: 4px;
-    padding: 36px 25px 40px;
-    display: flex; 
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 100%;
     flex-direction: column;
+    align-items: center;
+    padding: 0 21px;
+  }
+
+  .commitment > div,
+  .scolarship-wrapper {
+    height: 263px;
+
+    width: 100%;
+
+  }
+
+  .scolarship-wrapper {
+    border: unset;
+    padding: unset;
+    margin-bottom: 64px;
+    padding: 0 25px;
+  }
+
+  .title {
+    margin: 24px 0 8px;
+  }
+
+  .scolarship-value {
+    border: unset;
+    padding: unset;
+    margin: unset;
+    font-size: 24px;
+  }
+  .scholarship-info {
+    margin: unset;
+  }
+
+  .scholarship-info span:not(:first-child) {
+    font-size: 24px;
+}
+
+.commitment{
+    flex-direction: column;
+    align-items: center;
+}
+.commitment > div,
+.commitment > div:not(:last-child) {
+    margin: unset;
+    margin-bottom: 32px;
+}
+
+.commitment .title,
+.full-time .title{
+    margin: unset;
+}
+
+.commitment .meta-title{
+    font-size: 24px;
+}
+
+.graduation{
+    width: 100%;
+    margin-left: unset;
+}
+
+.full-time{ 
+    margin: unset;
+    width: 100%;
+}
 }

@@ -23,7 +23,7 @@ const Carousel = () =>{
           ]
       };
       return (
-        <div className='slider-wrapper'>
+        <section className='slider-wrapper'>
           <Slider {...settings}>
             <div>
                 <div className="slide-header">
@@ -106,7 +106,7 @@ const Carousel = () =>{
                 </div>
             </div>
           </Slider>
-        </div>
+        </section>
       );
 }
 export default Carousel;

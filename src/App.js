@@ -5,16 +5,18 @@ import {useEffect, useState} from 'react';
 import axios from 'axios';
 import Scholarship from './components/Scholarship/Scholarship';
 import Carousel from './components/Carousel';
-
+import StickyHeader from './components/StickyHeader';
+import FAQ from './components/FAQ';
 
 function App() {
-   const [scholarsShip, setScholarship] = useState({});
+   const [scholarShip, setScholarship] = useState({});
 
   useEffect(() => {
     axios.get(`https://stage.harbour.space/api/v1/scholarship_pages/data-science-apprenticeship-zeptolab`).then(res =>{
       let {data} = res;
       let {scholarship} = data;
       document.title = data.meta.title
+      console.log(data,'data')
       setScholarship(scholarship);
 
     }).catch(err =>{
@@ -45,9 +47,11 @@ function App() {
     <Landing />
     <About />
 
-    <Scholarship data={scholarsShip} />
+    <Scholarship data={scholarShip} />
 
     <Carousel />
+    <FAQ data={scholarShip.faqs}/>
+    <StickyHeader data={scholarShip}/>
     </div>
   );
 }

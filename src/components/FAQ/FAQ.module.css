@@ -1,0 +1,128 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.title {
+  color: #685dc5;
+  font-family: 500;
+  font-size: 48px;
+  width: 440px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+}
+
+.filter-container span {
+  font-size: 16px;
+  color: #6a6a6a;
+  margin-right: 10px;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  text-overflow: ellipsis;
+}
+
+.filter-container select {
+  border: 1px solid #dadada;
+  border-radius: 29px;
+  width: 235px;
+  height: 58px;
+  background: #fff;
+  color: #685dc5;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 24px;
+  background-image: url("../../assets//images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 207px 27px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: unset;
+}
+
+.list .question {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0 32px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.list .question > div {
+  display: flex;
+}
+
+.type {
+  font-weight: 600;
+  color: #685dc5;
+  width: 300px;
+  margin: unset;
+}
+p {
+  margin-bottom: 10px;
+}
+
+.answer {
+  max-width: 559px;
+}
+
+.list button {
+  border-radius: 50%;
+  border: 1px solid #dadada;
+  background: #fff;
+  color: #959595;
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.active {
+  background: #685dc5 !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 21px;
+  }
+  .header {
+    width: 100%;
+    flex-direction: column;
+    align-items: unset;
+  }
+  .filter-container {
+    width: 100%;
+    align-items: unset;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 32px;
+  }
+  .type{
+      display: none;
+  }
+.filter-container select{
+      width: 100%;
+      margin-top: 10px;
+  }
+}
